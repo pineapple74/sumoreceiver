@@ -52,9 +52,11 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "C") {
         comment.comment("Insert C-Button Action Between These Comments")
-        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 70)
-        basic.pause(500)
-        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 50)
+        for (let index = 0; index < 4; index++) {
+            wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 70)
+            basic.pause(500)
+            wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 40)
+        }
         comment.comment("Insert C-Button Action Between These Comments")
         action = "Z"
     } else if (action == "A") {
