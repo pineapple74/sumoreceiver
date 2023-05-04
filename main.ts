@@ -52,9 +52,8 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "C") {
         comment.comment("Insert C-Button Action Between These Comments")
-        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 45)
-        basic.pause(500)
-        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 80)
+        wuKong.setAllMotor(100, -100)
+        basic.pause(600)
         comment.comment("Insert C-Button Action Between These Comments")
         action = "Z"
     } else if (action == "A") {
